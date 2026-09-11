@@ -1,0 +1,13 @@
+# Copy to:  %USERPROFILE%\.quoting-nightmare.config.psd1
+# That copy is yours — do not commit it (gitignored).
+#
+# SshHosts must match Host names in your SSH config (%USERPROFILE%\.ssh\config).
+# Each name becomes Invoke-<Name>  e.g. SshHosts = @('lab') → Invoke-Lab
+
+@{
+    # Folder WT / Grok Desk should open in. Empty = your user profile.
+    WorkDirectory = ''
+
+    # SSH Host aliases from ~/.ssh/config (not IPs, not user@host).
+    SshHosts = @()
+}
